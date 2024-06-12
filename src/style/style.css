@@ -170,7 +170,9 @@ header ul{
     .container {
         width: 90%;
     }
-
+    .line{
+        width: 90%;
+    }
     .home .home-container .text-info {
         grid-template-columns: 1fr;
         text-align: center;
@@ -186,7 +188,16 @@ header ul{
     .home .home-container .text-info .fio {
         font-size: 36px;
     }
-
+    .home .home-container .img-info img{
+        width: 696px;
+        height: 379px;
+    }
+    .container {
+        width: 70%;
+    }
+    .line{
+        width:0%;
+    }
     .about-me h2 {
         font-size: 28px;
     }
@@ -213,6 +224,12 @@ header ul{
 
 /* Mobile landscape and smaller */
 @media (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+    .line{
+        width:0%;
+    }
     header ul {
         flex-direction: column;
         align-items: center;
@@ -246,9 +263,24 @@ header ul{
         height: 379px;
     }
 }
-
+@media (max-width: 650px){
+    .portfolio .photo-con .photo img{
+        width: 550px;
+        height: 300px;
+    }
+    .home .home-container .img-info img{
+        width: 550px;
+        height: 300px;
+    }
+}
 /* Mobile portrait and smaller */
 @media (max-width: 479px) {
+    .container {
+        width: 100%;
+    }
+    .line{
+        width:0%;
+    }
     header ul {
         padding: 0;
     }
@@ -285,10 +317,16 @@ header ul{
 
 /* Very small screens */
 @media (max-width: 320px) {
+    .container{
+        width: 100%;
+    }
+
     .home .home-container .text-info .fio {
         font-size: 20px;
     }
-
+    .container {
+        width: 30%;
+    }
     .skills h2, .portfolio h2, .contacts h2 {
         font-size: 24px;
     }
