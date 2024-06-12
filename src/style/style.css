@@ -1,0 +1,307 @@
+@import url("/src/style/stylesheet.css");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    color: #070707;
+}
+.container{
+    width: 943px;
+    margin: 0 auto;
+}
+header ul{
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+    header ul li{
+        font-weight: bold;
+        color:#828282
+    }
+    header ul li:hover{
+        font-weight: bold;
+        color: #070707;
+    }
+.line{
+    width: 940.6px;
+    background: #828282;
+    height: 1px;
+    margin-top: 33px;
+}
+.home{
+    margin-top: 40px;   
+}
+    .home .home-container .text-info{
+        display: grid;
+        grid-template-columns: 125px 155px 65px;
+        justify-content: space-between;
+        align-items: end;
+    }
+        .home .home-container .text-info p,h1{
+            color: #070707;
+        }
+        .home .home-container .text-info .fio{
+            font-size: 47px;
+            font-weight: bold;
+        }
+        .home .home-container .text-info .info{
+            font-weight: 500;
+        }
+        .home .home-container .text-info .lan{
+            font-weight: bold;
+            writing-mode: vertical-lr;
+        }
+    .home .home-container .img-info{
+        margin-top: 50px;
+    }
+.about-me{
+    text-align: center;
+    margin-top: 104px;
+    background-color: #F6F6F6;
+    width: 100%;
+    padding-bottom: 107px;
+}
+    .about-me h2{
+        padding-top: 120px;
+        font-weight: bold;
+        font-size: 34px;
+    }
+    .about-me p{
+        margin-top: 30px;
+        font-size: 18px;
+    }
+.skills{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+    .skills h2{
+        font-size: 34px;
+        font-weight: bold;
+        margin-top: 91px;
+    }
+    .skills p{
+        margin-top: 70px;
+    }
+        .skills .con-skill{
+            margin-top: 84px;
+            display: flex;
+            justify-content: space-between;
+            width: 936px;
+            flex-wrap: wrap;
+        }
+        .skills .con-skill .elem{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            text-align: center;
+            justify-content: space-between;
+        }
+                .skills .con-skill .elem p{
+                margin-top: 23px;
+                }
+                .skills .con-skill .elem .stars{
+                    width: 166px;
+                    margin-top: 40px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+.portfolio{
+    background: #F6F6F6;
+    margin-top: 110px;
+    text-align: center;
+}
+    .portfolio h2{
+        padding-top: 112px;
+        font-size: 34px;
+        font-weight: bold;
+    }
+    .portfolio .photo-con{
+        margin-top: 47px;
+    }
+            .portfolio .photo-con .photo a{
+                display: block;
+                margin-top: 44px;
+                padding-bottom: 99px;
+                color:#070707;
+                font-size: 18px;
+            }
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    margin-top: 114px;
+}
+    .contacts h2{
+        font-size: 34px;
+    }
+    .contacts p{
+        margin-top: 20px;
+        font-size: 18px;
+        align-items:center;
+    }
+    .contacts button{
+        margin-top: 29px;
+        background: #070707;
+        color:#F6F6F6;
+        width: 180px;
+        height: 42px;
+        border: none;
+        border-radius: 25px;
+    }
+    .contacts .logo{
+        width: 342px;
+        margin-top: 85px;
+        display: flex;
+        justify-content:space-between;
+    }
+    .contacts .under{
+        margin-top: 45px;
+        margin-bottom: 123px;
+        color:#828282;
+    }
+
+ /* Tablet landscape and smaller */
+@media (max-width: 1199px) {
+    .container {
+        width: 90%;
+    }
+
+    .home .home-container .text-info {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .home .home-container .img-info {
+        margin-top: 20px;
+    }
+}
+
+/* Tablet portrait and smaller */
+@media (max-width: 991px) {
+    .home .home-container .text-info .fio {
+        font-size: 36px;
+    }
+
+    .about-me h2 {
+        font-size: 28px;
+    }
+
+    .skills .con-skill {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills .con-skill .elem {
+        margin-bottom: 20px;
+    }
+
+    .portfolio .photo-con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio .photo-con .photo {
+        margin-bottom: 30px;
+    }
+}
+
+/* Mobile landscape and smaller */
+@media (max-width: 767px) {
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home .home-container .text-info .fio {
+        font-size: 28px;
+    }
+
+    .home .home-container .text-info {
+        grid-template-columns: 1fr;
+    }
+
+    .skills .con-skill {
+        width: 100%;
+    }
+
+    .portfolio .photo-con .photo {
+        width: 80%;
+    }
+
+    .contacts .logo {
+        width: 80%;
+    }
+    .portfolio .photo-con .photo img{
+        width: 696px;
+        height: 379px;
+    }
+    .home .home-container .img-info img{
+        width: 696px;
+        height: 379px;
+    }
+}
+
+/* Mobile portrait and smaller */
+@media (max-width: 479px) {
+    header ul {
+        padding: 0;
+    }
+
+    .home .home-container .text-info .fio {
+        font-size: 24px;
+    }
+
+    .skills .con-skill {
+        width: 100%;
+    }
+
+    .skills .con-skill .elem {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .portfolio .photo-con .photo {
+        width: 100%;
+    }
+
+    .contacts .logo {
+        width: 100%;
+    }
+    .portfolio .photo-con .photo img{
+        width: 460px;
+        height: 251px;
+    }
+    .home .home-container .img-info img{
+        width: 460px;
+        height: 251px; 
+    }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+    .home .home-container .text-info .fio {
+        font-size: 20px;
+    }
+
+    .skills h2, .portfolio h2, .contacts h2 {
+        font-size: 24px;
+    }
+
+    .skills .con-skill {
+        flex-direction: column;
+    }
+    .portfolio .photo-con .photo img{
+        width: 180px;
+        height: 90px;
+    }
+    .home .home-container .img-info img{
+        width: 180px;
+        height: 90px;
+    }
+}
